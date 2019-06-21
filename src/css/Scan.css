@@ -1,0 +1,19 @@
+.mains{
+  width: 750px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.scanView{
+  width: 100%;
+  object-fit: cover;
+}
+.scanCenter{
+  width: 100px;
+  height: 100px;
+  border-width: 2rpx;
+  border-style: solid;
+  border-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+}

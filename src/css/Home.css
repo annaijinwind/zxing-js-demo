@@ -1,0 +1,24 @@
+.main{
+  width: 750px;
+  height: 100%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgTop{
+  width: 200px;
+  height: 200px;
+}
+.btnTop{
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
