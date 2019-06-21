@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+浏览器使用摄像头扫描条码或者二维码的demo
 
 ## Available Scripts
 
