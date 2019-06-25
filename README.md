@@ -10,6 +10,7 @@
 在浏览器调用摄像头，实时的扫描条码二维码，支持类型参考zxing-js官方说明。由于调用摄像头需要较高权限，所以只能再localhost或者https下使用。就在本demo开发完成的前几天，官方才实现了连续扫描和混合扫描。
 
 ## zxing-js使用方法
+js部分
 ```js
  codeReader = new BrowserMultiFormatReader();
 
@@ -30,6 +31,13 @@
       })
       .catch(err => console.error(err));
  ```
+ 布局
+ 这里需要一个video组件作为载体进行预览
+ ```html
+ <div className="mains">
+        <video className="scanView" id="video" height={this.state.screenHeight} width={this.state.screenWidth} ></video>
+      </div>)
+```
 
 
 
