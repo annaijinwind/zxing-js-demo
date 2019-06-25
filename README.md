@@ -35,9 +35,15 @@ js部分
  这里需要一个video组件作为载体进行预览
  ```html
  <div className="mains">
-        <video className="scanView" id="video" height={this.state.screenHeight} width={this.state.screenWidth} ></video>
-      </div>)
+   <video className="scanView" id="video" height={this.state.screenHeight} width={this.state.screenWidth} ></video>
+ </div>
 ```
-
+其中
+```js
+BrowserMultiFormatReader
+```
+为扫描用工具类，使用这个可以实现连续混合的扫描
+该框架还可以直接用网络视频进行扫描，或者图片扫描，分别对应不同的工具类，可以参考官方文档
+完成以上之后就可以进行扫描了
 
 
