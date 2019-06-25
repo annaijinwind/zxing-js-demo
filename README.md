@@ -17,10 +17,13 @@ js部分
     codeReader
       .getVideoInputDevices()
       .then(videoInputDevices => {
+        //这个id为摄像头的id，对于pc可能只有一个摄像头，对于手机，则对应前后摄像头
         firstDeviceId = videoInputDevices[0].deviceId;
+        //'video'这个对应布局中video组件的id
         codeReader
           .decodeFromInputVideoDeviceContinuously(firstDeviceId, 'video', (result, err) => {
             if (result) {
+            //这里返回扫描结果，text为扫描到的值，其他的值可以自行打印观看
               console.log(result)
               alert(result.text)
             }
